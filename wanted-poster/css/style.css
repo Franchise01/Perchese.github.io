@@ -101,8 +101,7 @@ h4{
 }
 
 h4 > span{
-    padding-left:.5rem;
-    padding-right:.5rem;
+    padding: 0rem .5rem
 }
 
 h5 {
@@ -120,12 +119,12 @@ h5 {
 /* Section & Paragraph */
 
 section {
-    margin:.5rem,0rem,0rem;
+    margin:.5rem 0rem 0rem;
 }
 
 p {
-    margin:1rem,auto;
-    padding:0rem,1rem;
+    margin:1rem auto;
+    padding:0rem 1rem;
     width: 90%;
     text-align:left;
 }
@@ -135,7 +134,7 @@ p {
 
 img {
     width:100%;
-    margin:0rem,auto;
+    margin:0rem auto;
     max-width:50rem;
 }
 
