@@ -1,0 +1,276 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+/* 
+
+Spacing 
+
+- padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+- margin, (shorthand and/or specific properties like margin-top, etc.)
+
+- letter-spacing, word-spacing, line-height
+
+- width, max-width, min-width
+- height, max-height, min-height
+
+Typography 
+
+- font-family, font-size, font-style, font-weight
+
+- text-decoration, text-align
+
+- color
+
+- text-shadow, text-transform
+
+Box, Layout and Border 
+
+- border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+- box-shadow
+
+- display, float, align-items, align-content
+
+- grid-template-columns, grid-column-gap
+
+- transform
+
+Other
+
+- :nth()-child (to target specific child elements)
+
+- :focus, :hover, :active (to target link states)
+
+- @font-face or @import (to import typefaces)
+
+*/
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+/* General Setup */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: .9rem;
+}
+body {
+    text-align: left;
+    margin: 1.5rem auto;
+    width:100%;
+    min-width:56.25rem;
+}
+/* Layout */
+main {
+    overflow: auto;
+    margin: 0 auto;
+}
+article {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 75%;
+}
+
+img {
+    width: 100%;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 0 2rem 2rem 2rem;
+    font-family: Josefinslab, serif;
+    border-left-style: solid;
+    font-size: .8rem;
+    line-height: 1rem;
+}
+
+figure {
+    width: 100%;
+}
+button {
+    font-family: Ultra, sans-serif;
+    font-size: 2rem;
+    background-color:darkblue;
+    color: beige;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin-top: 2.5rem;
+    margin-left: 3rem;
+    box-shadow: .15rem .15rem black;
+    letter-spacing: .2rem;
+    text-decoration: none;
+}
+.article-image {
+    float: left;
+    width: 100%;
+    max-width: 25rem;
+    margin-left: .25rem;
+    margin-right: 1rem;
+}
+.highlight {
+    font-family: Ultra, serif;
+    background-color: maroon;
+    color: beige;
+    text-transform: uppercase;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding: .01rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-shadow: .5rem .5rem black;
+    letter-spacing: .8rem;
+}
+.main-section {
+    display: flex;
+}
+
+.subsection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    margin-top: 2rem;
+    margin-right: 4rem;
+    clear: left;
+}
+/* Import Typeface Files */
+
+@font-face {
+    font-family:Lato;
+    src: url(../fonts/sans-serif/lato-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:Montserrat;
+    src: url(../fonts/sans-serif/montserrat-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:Opensans;
+    src: url(../fonts/sans-serif/opensans-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:Roboto;
+    src: url(../fonts/sans-serif/roboto-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:Josefinslab;
+    src: url(../fonts/serif/josefinslab-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:Robotoslab;
+    src: url(../fonts/serif/robotoslab-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:Rozhaone;
+    src: url(../fonts/serif/rozhaone-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:Ultra;
+    src: url(../fonts/serif/ultra-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+
+/* Typography Styles */
+html {
+
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+
+}
+h1 {
+    font-family: Lato, sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    transform: rotate(-6deg);
+    color: #2f2f2f;
+    padding: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+    word-spacing: .125rem;
+    letter-spacing: .0625rem;
+    padding-top: 2rem;
+    padding-bottom: .125rem;
+    padding-left: 2rem;
+    margin-left: auto;
+}
+p {
+    letter-spacing: .0625rem;
+    line-height: 1.5rem;
+}
+
+figcaption {
+    background-color: #EEE4D1;
+    text-align: left;
+    padding: .75rem;
+}
+
+
+nav a:nth-child(2) {
+    color: black;
+    text-decoration: line-through;
+}
+
+/* Navigation */
+nav {
+    padding: 2rem;
+    border-top: .125rem solid;
+    border-bottom: .125rem solid;
+    width: 100%;
+}
+nav a {
+    font-size: 1.5rem;
+    color: darkblue;
+    text-decoration: none;
+    line-height: 3;
+    padding: 2.5rem;
+}
+
+nav a:focus,
+nav a:hover {
+    color: blue;
+}
+
+nav a:active {
+    color: black;  
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: right;
+    font-size: .5rem;
+    margin-top: 6rem;
+}
+footer p:nth-child(1) {
+   margin-right: 38rem; 
+}
+footer p:nth-child(2) {
+   margin-right: 2rem;
+    margin-left: 22rem;
+}
+.image-aside {
+    width: 15rem;
+    height: 20rem;
+}
+
+.expand {
+    font-size: .25rem;
+    letter-spacing: .02rem;
+    text-decoration: none;
+}
